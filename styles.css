@@ -1,0 +1,70 @@
+/* Basic */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Comfortaa', cursive;
+}
+
+/* JUMBOTRON */
+
+.jumbotron {
+    text-align: center;
+    background-color: #D9E8E4;
+    margin-top: 3rem;
+}
+
+/* Form */
+
+form {
+    margin-top: 25px;
+}
+.form-row {
+    display: inline-flex;
+    /* width: 20%; */
+}
+
+/* List o' Holidays */
+
+.list-group {
+    text-align: center;
+    height:390px;
+    overflow: scroll;
+    
+}
+
+.list-group-item {
+    background-color:#D9E8E4;
+}
+
+
+/* TAB RESULTS */
+
+.tab-content {
+    position: center;
+    text-align: center;
+    
+    
+}
+
+.tab-pane {
+    width:100%;
+    background-color: #ECC7C0;
+    border: 5px solid black;
+    padding: 10px;
+}
+
+#submit, .list-group-item.active {
+    background-color: #3C2E3D;
+}
+
+.badge {
+    background-color: #3C2E3D;
+    margin-right: 20px;
+    padding:5px;
+}
+
+hr.new {
+    border-top: 2px dashed black;
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+
+    <section class="main">
+
+        <div class="jumbotron">
+            <h1 class="display-4">Holiday Search!</h1>
+            <p class="lead">Did you forget when Christmas was or that silly holiday your uncle celebrates every year?
+            </p>
+            <hr class="my-4">
+            <p>You've come to the right place! Search below to find the information you are seeking!</p>
+
+            <!-- SEARCH AREA -->
+
+            <!-- <form>
+                <div class="form-row">  
+                    <div class="col-auto">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Example: National Bacon Day" aria-label="Recipient's username"
+                            aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Search</button>
+                        </div>
+                    </div>
+                        <div class="input-group">
+                            <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                                <option selected>Country...</option>
+                                <option value="us">United States</option>
+                                <option value="ca">Canada</option>
+                                <option value="mx">Mexico</option>     
+                            </select>
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button">Search</button>
+                            </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="input-group">
+                            <select class="custom-select" id="inputGroupSelect01" aria-label="Example select with button addon">
+                                <option selected>Month...</option>
+                                <option value="1">January</option>
+                                <option value="2">Feburary</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>                  
+                            </select>
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button">Search</button>
+                            </div>
+                        </div>
+                    </div>  
+                </div> 
+            </form> -->
+
+                <form>
+                    <div class="form-row">
+                        <div class="col-4">
+                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                            <select class="custom-select mr-sm-2" id="country-picker" required>
+                                <option selected>Country...</option>
+                                <option value="us">United States</option>
+                                <option value="ca">Canada</option>
+                                <option value="mx">Mexico</option>
+                                <!-- <option value="cu">Cuba</option>
+                                <option value="br">Brazil</option>
+                                <option value="au">Austraila</option>
+                                <option value="mx">Japan</option>
+                                <option value="cn">China</option>
+                                <option value="ru">Russia</option>
+                                <option value="de">Germany</option>
+                                <option value="fr">France</option>
+                                <option value="it">Italy</option>
+                                <option value="gb">United Kingdom</option>
+                                <option value="aq">Antartica</option> -->
+                            </select>
+                        </div>
+                        <div class="col-4">
+                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                            <select class="custom-select mr-sm-2" id="month-picker">
+                                <option selected>Month...</option>
+                                <option value="1">January</option>
+                                <option value="2">Feburary</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                          </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id = "day-picker" placeholder="Day">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id = "year-picker" placeholder="Year" required>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary mb-2" id="submit">Search</button>
+                        </div>
+                    </div>
+                    
+                </form>
+        </div>
+
+
+         <!-- RESULTS -->
+
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-4">
+              <div class="list-group" id="list-tab" role="tablist">
+                <!-- <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Holiday 1</a>
+                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">King James's Day</a>
+                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">National Day</a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">4th Holiday</a> -->
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="tab-content" id="nav-tabContent">
+                <!-- <div class="tab-pane fade" id="list-home" role="tabpanel" aria-labelledby="list-home-list">insert information here</div>
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">King James Day you idiot</div>
+                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">4th one</div> -->
+              </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+<!-- <option value="AL">Alabama</option>
+<option value="AK">Alaska</option>
+<option value="AR">Arizona</option>
+<option value="CA">California</option>
+<option value="CO">Colorado</option>
+<option value="CT">Connecticut</option>
+<option value="DE">Delaware</option>
+<option value="FL">Florida</option>
+<option value="GA">Georgia</option>
+<option value="HI">Hawaii</option>
+<option value="ID">Idaho</option>
+<option value="IL">Illinois</option>
+<option value="IN">Indiana</option>
+<option value="IA">Iowa</option>
+<option value="KS">Kansas</option>
+<option value="KY">Kentucky</option>
+<option value="LA">Louisiana</option>
+<option value="ME">Maine</option>
+<option value="MD">Maryland</option>
+<option value="MA">Massachusetts</option>
+<option value="MI">Michigan</option>
+<option value="MN">Minnesota</option>
+<option value="MS">Mississippi</option>
+<option value="MO">Missouri</option>
+<option value="MT">Montana</option>
+<option value="NE">Nebraska</option>
+<option value="NV">Nevada</option>
+<option value="NH">New Hampshire</option>
+<option value="NJ">New Jersey</option>
+<option value="NM">New Mexico</option>
+<option value="NY">New York</option>
+<option value="NC">North Carolina</option>
+<option value="ND">North Dakota</option>
+<option value="OH">Ohio</option>
+<option value="OK">Oklahoma</option>
+<option value="OR">Oregon</option>
+<option value="PA">Pennsylvania</option>
+<option value="RI">Rhode Island</option>
+<option value="SC">South Carolina</option>
+<option value="SD">South Dakota</option>
+<option value="TN">Tennessee</option>
+<option value="TX">Texas</option>
+<option value="UT">Utah</option>
+<option value="VT">Vermont</option>
+<option value="VA">Virgina</option>
+<option value="WA">Washington</option>
+<option value="WV">West Virgina</option>
+<option value="WI">Wisconsin</option>
+<option value="WY">Wyoming</option> --> 
